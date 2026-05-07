@@ -1,0 +1,7 @@
+rep,ground_truth,best_ari,best_k
+acoustic,front_back,0.5871559633027523,3
+acoustic,high,-0.1111111111111111,2
+whisper,front_back,0.03669724770642202,3
+whisper,high,0.1935483870967742,5
+xlsr,front_back,0.5871559633027523,3
+xlsr,high,0.0,2

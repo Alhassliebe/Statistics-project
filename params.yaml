@@ -1,0 +1,39 @@
+corpus:
+  root: data/ru-fr_interference
+  textgrids_root: 2/wav_et_textgrids/FRcorp_textgrids_only
+
+acoustic:
+  max_formant_female: 5500
+  max_formant_male: 5000
+  n_formants: 5
+  pitch_floor: 75
+  pitch_ceiling: 600
+  long_vowel_threshold_ms: 80
+  french_oral_vowels: [i, e, "E", a, "O", o, u, y, "@", "2", "9"]
+  fricatives: [s, z, "S", "Z", f, v]
+
+neural:
+  whisper_primary_layer: 20
+  xlsr_primary_layer: 12
+
+normalise:
+  pca_dim_viz: 2
+  pca_dim_clust: 50
+  umap_neighbors: 15
+  umap_min_dist: 0.1
+  random_state: 42
+
+stats:
+  alpha: 0.05
+  fdr_method: fdr_bh
+  permutation_B: 5000
+  bootstrap_B: 2000
+  rope_acoustic_lobanov: [-0.2, 0.2]
+
+clustering:
+  linkage: ward
+  k_range: [2, 12]
+
+paths:
+  features_dir: data/features
+  results_dir: results

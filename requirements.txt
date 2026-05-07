@@ -1,0 +1,16 @@
+numpy
+pandas
+scipy
+scikit-learn
+statsmodels
+matplotlib
+praat-parselmouth>=0.4.3
+textgrid
+librosa
+torch
+transformers
+umap-learn
+pyyaml
+snakemake
+jupyter
+nbformat
